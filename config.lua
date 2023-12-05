@@ -6,4 +6,5 @@ vim.opt.relativenumber = true
 lvim.colorscheme = "desert"
 lvim.builtin.lualine.options.theme = "gruvbox"
 require("plugins")
+require("custom.key-mappings")
 require("custom.telescope")

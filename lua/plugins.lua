@@ -1,6 +1,6 @@
 lvim.plugins = {
 
---- ChatGPT plugin
+-- ChatGPT plugin
 {
   "jackMort/ChatGPT.nvim",
     event = "VeryLazy",
@@ -17,12 +17,19 @@ lvim.plugins = {
 },
 
 
---- Maxi
+-- Maxi
 {
   "szw/vim-maximizer",
   keys = {
-    { "<leader>mm", "<cmd>MaximizerToggle<CR>", desc = "Maximize/minimize a split" },
+    { "<C-m>", "<cmd>MaximizerToggle<CR>", desc = "Maximize/minimize a split" },
   },
 },
 
+-- Telescope native fzf
+{
+  'nvim-telescope/telescope-fzf-native.nvim',
+  build = 'make'
+},
+
 }
+
