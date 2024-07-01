@@ -5,6 +5,7 @@
 vim.opt.relativenumber = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+vim.opt.swapfile = false
 lvim.colorscheme = "desert"
 lvim.builtin.lualine.options.theme = "gruvbox"
 require("plugins")
