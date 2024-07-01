@@ -3,6 +3,8 @@
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
 vim.opt.relativenumber = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 lvim.colorscheme = "desert"
 lvim.builtin.lualine.options.theme = "gruvbox"
 require("plugins")
