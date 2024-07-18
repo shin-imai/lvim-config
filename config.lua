@@ -11,3 +11,12 @@ lvim.builtin.lualine.options.theme = "gruvbox"
 require("plugins")
 require("custom.key-mappings")
 require("custom.telescope")
+vim.opt.shell = "/bin/zsh"
+
+-- Remove the Ctrl-\ for terminal toggling, allowing `C-\ C-n` as esc on term mode
+-- lvim.builtin.terminal.open_mapping = "<c-t>"
+-- local opts = {buffer = 0} or {}
+local opts = {silent = true}
+vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
+-- Enable the use of C-l to clean the terminal
+lvim.keys.term_mode = { ["<C-l>"] = false }
