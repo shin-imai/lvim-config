@@ -36,6 +36,13 @@ lvim.plugins = {
     "tpope/vim-fugitive"
   },
 
+-- Glow
+  {
+    "ellisonleao/glow.nvim",
+    config = true,
+    cmd = "Glow"
+  },
+
 -- Sourcegraph
 -- {
 --   "sourcegraph/sg.nvim",
