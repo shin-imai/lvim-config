@@ -35,6 +35,7 @@ lvim.plugins = {
   {
     "tpope/vim-fugitive"
   },
+
 -- Sourcegraph
 -- {
 --   "sourcegraph/sg.nvim",
