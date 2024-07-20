@@ -18,19 +18,23 @@ lvim.plugins = {
 
 
 -- Maxi
-{
-  "szw/vim-maximizer",
-  keys = {
-    { "<C-m>", "<cmd>MaximizerToggle<CR>", desc = "Maximize/minimize a split" },
+  {
+    "szw/vim-maximizer",
+    keys = {
+      { "<C-m>", "<cmd>MaximizerToggle<CR>", desc = "Maximize/minimize a split" },
+    },
   },
-},
 
 -- Telescope native fzf
-{
-  'nvim-telescope/telescope-fzf-native.nvim',
-  build = 'make'
-},
+  {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    build = 'make'
+  },
 
+-- Git Fugitive
+  {
+    "tpope/vim-fugitive"
+  },
 -- Sourcegraph
 -- {
 --   "sourcegraph/sg.nvim",
